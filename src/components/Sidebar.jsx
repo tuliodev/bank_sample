@@ -12,13 +12,14 @@ import {
   List, ListItem, ListItemButton, ListItemText, Typography,
 } from '@mui/material';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import PropTypes from 'prop-types';
 import { MobileOpenContext } from '../Contexts/MobileOpen';
 
 const drawerWidth = 230;
 export default function SideBar(props) {
   const { window } = props;
+
+  const { mobileOpen, handleDrawerToggle } = React.useContext(MobileOpenContext);
+
   const mainListIcons = [
     <HomeIcon style={{ color: 'A4B4CB', width: '20%' }} />,
     <ReceiptIcon style={{ color: 'A4B4CB', width: '20%' }} />,
@@ -30,6 +31,8 @@ export default function SideBar(props) {
     <InfoIcon style={{ color: 'A4B4CB', width: '20%' }} />,
     <SettingsIcon style={{ color: 'A4B4CB', width: '20%' }} />,
   ];
+
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   const drawer = (
     <div>
@@ -71,8 +74,6 @@ export default function SideBar(props) {
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
-  const { mobileOpen, handleDrawerToggle } = React.useContext(MobileOpenContext);
   return (
     <>
       <Drawer
@@ -103,12 +104,3 @@ export default function SideBar(props) {
     </>
   );
 }
-
-SideBar.propTypes = {
-  /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-  // eslint-disable-next-line react/require-default-props
-  window: PropTypes.func,
-};
