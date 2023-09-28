@@ -6,14 +6,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import IconButton from '@mui/material/IconButton';
 
-import PersonIcon from '@mui/icons-material/Person';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import { Button } from '@mui/material';
 import SideBar from './Sidebar';
 import { MobileOpenContext } from '../Contexts/MobileOpen';
+import Header from './Header';
+import Card from './Card';
 
 const drawerWidth = 230;
 
@@ -43,29 +41,7 @@ export default function MenuAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <div style={{
-            position: 'absolute',
-            right: 32,
-
-          }}
-          >
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'end',
-              margin: '0 5px',
-            }}
-            >
-              <Button variant="text"><SearchIcon style={{ color: 'A4B4CB' }} /></Button>
-              <Button variant="text"><NotificationsIcon style={{ color: 'A4B4CB' }} /></Button>
-              <Button variant="text">
-                {' '}
-                <PersonIcon style={{ color: 'A4B4CB' }} />
-              </Button>
-
-            </div>
-          </div>
-
+          <Header />
         </Toolbar>
       </AppBar>
       <Box
@@ -74,6 +50,13 @@ export default function MenuAppBar() {
         aria-label="mailbox folders"
       />
       <SideBar mobileOpen />
+      <Box
+        component="main"
+        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+      >
+        <Toolbar />
+        <Card />
+      </Box>
     </Box>
   );
 }
