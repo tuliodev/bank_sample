@@ -6,8 +6,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import IconButton from '@mui/material/IconButton';
 
+import PersonIcon from '@mui/icons-material/Person';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { Button } from '@mui/material';
 import SideBar from './Sidebar';
 import { MobileOpenContext } from '../Contexts/MobileOpen';
 
@@ -35,10 +39,33 @@ export default function MenuAppBar() {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' }, backgroundColor: 'black' }}
+            sx={{ mr: 2, display: { sm: 'none' }, color: 'black' }}
           >
             <MenuIcon />
           </IconButton>
+          <div style={{
+            position: 'absolute',
+            right: 32,
+
+          }}
+          >
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'end',
+              margin: '0 5px',
+            }}
+            >
+              <Button variant="text"><SearchIcon style={{ color: 'A4B4CB' }} /></Button>
+              <Button variant="text"><NotificationsIcon style={{ color: 'A4B4CB' }} /></Button>
+              <Button variant="text">
+                {' '}
+                <PersonIcon style={{ color: 'A4B4CB' }} />
+              </Button>
+
+            </div>
+          </div>
+
         </Toolbar>
       </AppBar>
       <Box
@@ -46,7 +73,6 @@ export default function MenuAppBar() {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       />
-
       <SideBar mobileOpen />
     </Box>
   );
