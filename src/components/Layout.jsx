@@ -8,14 +8,13 @@ import IconButton from '@mui/material/IconButton';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import SideBar from './Sidebar';
 import { MobileOpenContext } from '../Contexts/MobileOpen';
+import SideBar from './Sidebar';
 import Header from './Header';
-import Card from './Card';
 
 const drawerWidth = 230;
 
-export default function MenuAppBar() {
+export default function Layout({ children }) {
   const { handleDrawerToggle } = React.useContext(MobileOpenContext);
 
   return (
@@ -29,7 +28,6 @@ export default function MenuAppBar() {
           backgroundColor: 'white',
           boxShadow: 'none',
         }}
-
       >
         <Toolbar>
           <IconButton
@@ -55,7 +53,8 @@ export default function MenuAppBar() {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Card />
+
+        {children}
       </Box>
     </Box>
   );
