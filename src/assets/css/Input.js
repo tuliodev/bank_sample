@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 100%;
     flex-direction: row;
     margin-top: 20px;
-    border: 1px solid gray;
+    border: 1px solid #d4d4d4;
     border-radius: 14px;
 `;
 
@@ -28,7 +28,7 @@ export const InputLabel = styled.p`
 export const StyledInput = styled(Input)`
     color: #3D424B;
     border: 0;
-    margin: 5px;
+    font-size: 25px !important;
 `;
 
 export const Users = styled.div`
@@ -36,15 +36,14 @@ export const Users = styled.div`
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    width: 50%;
+    max-width: 40%;
     height: 100%;
-
 `;
 
 export const UsersAvatar = styled.img`
-    width: 40px;
-    height: 40px;
-    border-radius:100px;
-    background: #000;
-    margin-top: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius:150px;
+    margin-top: 70%;
+    margin-right: 5px;
 `;
