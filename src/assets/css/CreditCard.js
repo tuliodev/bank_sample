@@ -7,7 +7,3 @@ export const CardDiv = styled.div`
       justify-content: space-around;
      
 `;
-
-export const Teste = styled.div`
-display: flex; flex-direction: row; justify-content: space-evenly; height: 100%;
-`;

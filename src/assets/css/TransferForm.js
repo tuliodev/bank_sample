@@ -5,7 +5,6 @@ export const BalanceDiv = styled.div`
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
-    /* border: 0.1px solid gray; */
     border-radius: 8px;
     margin-top: 10px;
 `;
