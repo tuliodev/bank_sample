@@ -9,6 +9,4 @@ export const Container = styled.button`
     border: 0;
     cursor: pointer;
     width: 100%;
-
 `;
-
