@@ -10,6 +10,8 @@ import TableRow from '@mui/material/TableRow';
 import { NameContainer, UserAvatar } from '../assets/css/TransactionsTable';
 import StatusButton from './StatusButton';
 
+import UserImg from '../assets/img/profile.jpeg';
+
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
   { id: 'date', label: 'ISO\u00a0Code', minWidth: 100 },
@@ -76,7 +78,7 @@ export default function TransactionsTable() {
                         {column.id === 'name'
                           ? (
                             <NameContainer>
-                              <UserAvatar />
+                              <UserAvatar src={UserImg} />
                               <p>Sent to Tulio</p>
                             </NameContainer>
                           )
