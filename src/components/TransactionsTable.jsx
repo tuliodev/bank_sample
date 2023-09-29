@@ -7,7 +7,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { NameContainer, UserAvatar } from '../assets/css/TransactionsTable';
+import { NameContainer, UserAvatar } from '../assets/styles/TransactionsTable';
 import StatusButton from './StatusButton';
 
 import UserImg from '../assets/img/profile.jpeg';

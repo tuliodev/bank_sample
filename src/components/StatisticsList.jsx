@@ -3,7 +3,7 @@ import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
 import PaymentsIcon from '@mui/icons-material/Payments';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import { Container, SubContainer, Text } from '../assets/css/StatisticsList';
+import { Container, SubContainer, Text } from '../assets/styles/StatisticsList';
 import Statistic from './Statistic';
 
 export default function StatisticsList() {

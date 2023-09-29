@@ -10,7 +10,7 @@ import ReceiptIcon from '@mui/icons-material/Receipt';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import {
   BalanceDiv, BalanceText, ActionWrapper,
-} from '../assets/css/TransferForm';
+} from '../assets/styles/TransferForm';
 import Input from './Input';
 // import ActionWrapper from './ActionWrapper';
 import QuickTransferOption from './QuickTransferOption';

@@ -2,7 +2,7 @@ import { ThemeProvider, createMuiTheme } from '@mui/material';
 import React from 'react';
 import Home from './pages/Home';
 
-import './assets/css/Global.css';
+import './assets/styles/Global.css';
 
 const theme = createMuiTheme({
   typography: {

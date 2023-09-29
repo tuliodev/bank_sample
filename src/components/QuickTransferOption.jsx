@@ -4,7 +4,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import { Container } from '../assets/css/QuickTransferOption';
+import { Container } from '../assets/styles/QuickTransferOption';
 
 export default function QuickTransferOption({ icon, label }) {
   return (

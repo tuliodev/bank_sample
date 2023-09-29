@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Container, InputWrapper, InputLabel, StyledInput, Users, UsersAvatar,
-} from '../assets/css/Input';
+} from '../assets/styles/Input';
 import UserImg from '../assets/img/profile.jpeg';
 
 export default function Input() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Container, MainText, SubText, TextContainer,
-} from '../assets/css/Statistic';
+} from '../assets/styles/Statistic';
 
 export default function Statistic({ logo, value, label }) {
   return (

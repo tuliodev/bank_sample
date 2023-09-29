@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import MobileOpenProvider from '../Contexts/MobileOpen';
 import {
   ChartDiv, Container, ContentColumnDiv, ContentRowDiv,
-} from '../assets/css/Home';
+} from '../assets/styles/Home';
 import TransferForm from '../components/TransferForm';
 import TransactionsTable from '../components/TransactionsTable';
 import StatisticsList from '../components/StatisticsList';
